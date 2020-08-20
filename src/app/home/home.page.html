@@ -1,0 +1,209 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Covid-19 Quizz
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" offset-md="3">
+<ion-card>
+  <ion-card-content>
+    This tool will help you assess your symptoms and determine if you're a good
+     candidate for a coronavirus disease 2019 (COVID-19) test in your home community.
+      It also offers guidance on when to seek medical care and what to do in the meantime. 
+      This information
+     is based on Centers for Disease Control and Prevention (CDC) guidelines and Mlab expert opinion.
+  </ion-card-content>
+
+  <ion-item>
+<ion-label position="floating">Name:</ion-label>
+  <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Number of Questions</ion-label>
+    <ion-badge slot="end">5</ion-badge>
+  </ion-item>
+
+  <div class="ion-text-center">
+  <ion-text color="secondary">
+    <h1><u>Question 1</u></h1>
+  </ion-text>
+  </div>
+ 
+  <ion-list>
+    <ion-radio-group [(ngModel)]="user.response" value="Corona Virus Disease 2019" name="radio-group:">
+      <ion-list-header>
+        <ion-label><h2><b>What does Covid-19 stand for?</b></h2></ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Corona Virus Disease 2019</ion-label>
+        <ion-radio slot="start" value="Corona Virus Disease 2019"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Chinese-Originated Viral Disease 2019</ion-label>
+        <ion-radio slot="start" value="Chinese-Originated Viral Disease 2019"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Common Virus Disease 2019</ion-label>
+        <ion-radio slot="start" value="Common Virus Disease 2019"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Chinese Wuhan Virus Disease 2019</ion-label>
+        <ion-radio slot="start" value="Chinese Wuhan Virus Disease 2019"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+ <div class="ion-text-center">
+  <ion-text color="secondary">
+    <h1><u>Question 2</u></h1>
+  </ion-text>
+  </div>
+ 
+  <ion-list>
+    <ion-radio-group [(ngModel)]="user.answer" value="Corona Virus Disease 2019" name="radio-group:">
+      <ion-list-header>
+        <ion-label><h2><b>What should you try avoid touching so you dont get infected?</b></h2></ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Your Cat</ion-label>
+        <ion-radio slot="start" value="Your Cat"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Wet Paint</ion-label>
+        <ion-radio slot="start" value="Wet Paint"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Your books</ion-label>
+        <ion-radio slot="start" value="Your books"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Your face</ion-label>
+        <ion-radio slot="start" value="Your face"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <div class="ion-text-center">
+    <ion-text color="secondary">
+      <h1><u>Question 3</u></h1>
+    </ion-text>
+    </div>
+   
+    <ion-list>
+      <ion-radio-group [(ngModel)]="user.symptom" value="Corona Virus Disease 2019" name="radio-group:">
+        <ion-list-header>
+          <ion-label><h2><b>Which one is not a symptom of covid-19?</b></h2></ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>Itchiness</ion-label>
+          <ion-radio slot="start" value="Itchiness"></ion-radio>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Dry cough</ion-label>
+          <ion-radio slot="start" value="Dry cough"></ion-radio>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Shortness of breath</ion-label>
+          <ion-radio slot="start" value="Shortness of breath"></ion-radio>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label>Fever</ion-label>
+          <ion-radio slot="start" value="Fever"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <div class="ion-text-center">
+      <ion-text color="secondary">
+        <h1><u>Question 4</u></h1>
+      </ion-text>
+      </div>
+     
+      <ion-list>
+        <ion-radio-group [(ngModel)]="user.wash" value="Corona Virus Disease 2019" name="radio-group:">
+          <ion-list-header>
+            <ion-label><h2><b>How long should you wash your hands for?</b></h2></ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>10s</ion-label>
+            <ion-radio slot="start" value="10s"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>2s</ion-label>
+            <ion-radio slot="start" value="2s"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>20s</ion-label>
+            <ion-radio slot="start" value="20s"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>1m</ion-label>
+            <ion-radio slot="start" value="1m"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <div class="ion-text-center">
+        <ion-text color="secondary">
+          <h1><u>Question 5</u></h1>
+        </ion-text>
+        </div>
+       
+        <ion-list>
+          <ion-radio-group [(ngModel)]="user.dispose" value="Corona Virus Disease 2019" name="radio-group:">
+            <ion-list-header>
+              <ion-label><h2><b>Whats the best way to dispose of a tissue after usage?</b></h2></ion-label>
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>Put in bin or flush</ion-label>
+              <ion-radio slot="start" value="Put in bin or flush"></ion-radio>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>Put in your pocket</ion-label>
+              <ion-radio slot="start" value="Put in your pocket"></ion-radio>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>Leave it for mom</ion-label>
+              <ion-radio slot="start" value="Leave it for mom"></ion-radio>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>Hide it</ion-label>
+              <ion-radio slot="start" value="Hide it"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+  <ion-footer>
+    <ion-button (click)="submit()">Submit</ion-button>
+  </ion-footer>
+</ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
